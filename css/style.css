@@ -126,7 +126,7 @@ section:nth-child(even) {
 }
 
 
-h3 {
+h3, #certs h4 {
    text-align: center;
    top: 50%;
    text-weight: bold;
@@ -166,7 +166,7 @@ article {
    overflow: hidden;
 }
 
-#education img, #experience img {
+#education img, #experience img, #certs img {
     width: 200px;
     height: 200px;
     display: inline-block;
@@ -223,47 +223,63 @@ footer {
 }
 
 button {
-   margin-top: 20px;
-   margin: 0 auto;
-   width: 45%;
-
-}
-
-#certs article, #skills article {
-    display: inline-block;
-    text-align: center;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-#certs ul, #skills ul {
-    text-align: center;
-    vertical-align: text-top;
-}
-
-#certs article {
-    width:22%;
-    height: 700px;
+   top: 50%;
+   height: 50px;
+   width: 200px;
+   left: 50%;
 
 }
 
 #skills article {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
     width: 30%;
     height: 400px;
 }
 
-#portfolio article, #experience article {
+#skills ul {
+    text-align: center;
+    vertical-align: text-top;
+}
+
+#portfolio article, #experience article, #certs article {
     display: inline-block;
     width: 100%;
 }
 
-#education ol, #experience ol, #experience ul, #experience h4 {
+#education ol, #experience ol, #experience ul, #experience h4{
     width: 75%;
     display: inline-block;
     margin: 0 auto;
 }
 
+#certs ol {
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px solid black;
+}
+
+#certs ul {
+    width: 60%;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border: 0px solid black;
+    column-count: 3;
+}
+
 #experience img {
+    float: left;
+    display: inline-block;
+}
+
+#certs img {
+    height: 100px;
+    width: 100px;
     float: left;
     display: inline-block;
 }
