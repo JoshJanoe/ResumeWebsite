@@ -1,77 +1,110 @@
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
    <title>Josh Janoe - Web Resume</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
    <link rel="stylesheet" href="css/style.css">
+
+   <!-- FontAwesome -->
    <script src="https://kit.fontawesome.com/07d139f09f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<header>
-   <nav>
-      <ul>
-         <li><a href="#about"> ABOUT </a></li>
-         <li><a href="#education"> EDUCATION </a></li>
-         <li><a href="#certs"> CERTS </a>
-            <ul>
-               <li>Google IT Automation with Python</li>
-               <li>Java Programming and Software Engineering Fundamentals</li>
-               <li>Object Oriented Java Programming</li>
-               <li>Web Design for Everybody</li>
+<header class="container">
+   <nav class="navbar navbar-expand-md row" aria-label="navbar">
+      <div class="container-fluid">
+         <a class="navbar-brand"></a>
+         <button class="navbar-toggler newDropdown" type="button" data-bs-toggle="collapse" data-bs-target="#jjNavBar">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-md-center" id="jjNavBar">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+               <li class="nav-item">
+                  <a class="nav-link" href="#about">about</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#education">education</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">certifications</a>
+                  <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#pythonGoogle">Google IT Automation with Python</a></li>
+                     <li><a class="dropdown-item" href="#javaDuke">Java Programming and Software Engineering Fundamentals</a></li>
+                     <li><a class="dropdown-item" href="#javaUCSD">Object Oriented Java Programming</a></li>
+                     <li><a class="dropdown-item" href="#webUMich">Web Design for Everybody</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#skills">skills</a>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">experience</a>
+                  <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#ddc">Denton Door</a></li>
+                     <li><a class="dropdown-item" href="#ipi">IP Illustration</a></li>
+                     <li><a class="dropdown-item" href="#bbva">BBVA</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">portfolio</a>
+                  <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="#coding">Coding & Web</a></li>
+                     <li><a class="dropdown-item" href="#cadcnc">CAD & CNC</a></li>
+                  </ul>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contact">contact</a>
+               </li>
             </ul>
-         </li>
-         <li><a href="#experience"> EXPERIENCE </a>
-            <ul>
-               <li>DentonDoor</li>
-               <li>IP Illustration</li>
-               <li>BBVA</li>
-            </ul>
-         </li>
-         <li><a href="#skills"> SKILLS </a></li>
-         <li><a href="#portfolio"> PORTFOLIO </a>
-            <ul>
-               <li>Code</li>
-               <li>CAD</li>
-               <li>Web</li>
-               <li>CNC</li>
-            </ul>
-         </li>
-         <li><a href="#references"> REFERENCES </a></li>
-         <li><a href="#contact"> CONTACT </a></li>
-      </ul>
+         </div>
+      </div>
    </nav>
-   <h1>Josh Janoe</h1>
-   <ol>
-      <li>Email: JoshJanoe@gmail.com</li>
-      <li>Phone: (469) 951-4696</li>
-      <li>Location: Corinth, TX</li>
-   </ol>
-   <img src="images/JJJ4.png">
+   <section class="row">
+      <figure class="col-md-3">
+         <img class="img-fluid d-block" alt="my pic" src="images/JJJ4.png">
+      </figure>
+      <article class="col-md-6">
+         <h1>Josh Janoe</h1>
+         <ol>
+            <li>Email: JoshJanoe@gmail.com</li>
+            <li>Phone: (469) 951-4696</li>
+            <li>Location: Corinth, TX</li>
+            <li>LinkedIn: <a href="https://www.LinkedIn.com/in/JoshJanoe" target="_blank" rel="noreferrer noopener">https://www.LinkedIn.com/in/JoshJanoe</a></li>
+            <li>GitHub: <a href="https://www.GitHub.com/JoshJanoe" target="_blank" rel="noreferrer noopener">https://www.GitHub.com/JoshJanoe</a></li>
+         </ol>
+      </article>
+   </section>
 </header>
 
 <main>
-   <section id="about">
+   <section id="about" class="container">
       <h2>About</h2>
       <p>This website has been built and designed for the purpose of practicing and demonstrating skills related to web design.
          These include use of HTML, CSS, and JavaScript. In addition it shows a familiarity with various web design related tools
-         like GitHub, and CodePen as well as other learned skills that indirectly aid in the development and production of web sites
+         like GitHub, bootstrap, and CodePen as well as other learned skills that indirectly aid in the development and production of web sites
          and applications. Ideally, this can give potential employers an idea of competency in regards to these areas and lead to
-         employment that will allow for continued growth. My career interests include full stack web development, as well as desktop
+         employment that will allow for continued growth. My career interests include (but are not limited to) full stack web development, desktop
          software development and mobile application developement.</p>
       <p>An education in science and engineering, combined with a background full of customer service and sales has equipped me to
          handle a wide array of job roles and allowed me to readily adapt to any situation I've encountered. Every position has been
-         an opportunity to learn somehing completely new and add a valuable skill. Now I am taking the steps to break into software
-         and application development field and look forward to beginning a new chapter that can put all that I've learned to use for
-         years to come.</p>
+         an opportunity to learn somehing completely new and add a valuable skill. Now I am taking the steps to break into the IT field and look
+         forward to beginning a new chapter that can put all that I've learned to use for years to come.</p>
    </section>
 
-   <section id="education">
+   <section id="education" class="container">
       <h2>Education</h2>
-      <article>
-         <h3>University of North Texas</h3>
-         <img src="images/unt.jpg" alt="UNT" class="logo">
-         <ol>
+      <article class="row">
+         <figure class="text-center col-md-4">
+            <h3>University of North Texas</h3>
+            <img src="images/unt.jpg" alt="UNT" class="logo">
+         </figure>
+         <ol class="col-md-7">
             <li><b>Degree: </b> Bachelor of Science in Physics</li>
             <li><b>Graduation Year: </b> 2013</li>
             <li><b>Campus: </b> Denton, TX</li>
@@ -79,20 +112,22 @@
             <li><b>Minor: </b> Engineering Technology</li>
             <li><b>Classes include: </b> Calculus I - Differential Equations, Statistical & Thermal Physics, Quantum Physics, General Chemistry I & II, Engineering Materials, Program Developmen, Digital Logic, Digital Controls.</li>
             <li></li>
-            <li><button>View Transcript</button></li>
+            <!--<li><button>View Transcript</button></li>-->
          </ol>
-         <a href="#top"> Back To Top </a>
+         <a href="#top" class="back-to-top"> Back To Top </a>
       </article>
    </section>
 
-   <section id="certs">
+   <section id="certs" class="container">
       <h2>Certifications and Specializations</h2>
-      <article>
-         <h3>IT Automation with Python Professional Certificate</h3>
+      <article id="pythonGoogle" class="row text-center">
+         <h3 class="text-center">IT Automation with Python Professional Certificate</h3>
          <h4>Certification by: Google and Coursera</h4>
-         <img src="images/google.png" alt="google">
-         <img src="images/coursera.png" alt="coursera">
-         <ul>
+         <figure class="text-center col-md-6">
+            <img src="images/google.png" alt="google" class="img-thumbnail col-xs-6">
+            <img src="images/coursera.png" alt="coursera" class="img-thumbnail col-xs-6">
+         </figure>
+         <ul class="col-md-6">
             <li>Using Version Control</li>
             <li>Troubleshooting & Debugging</li>
             <li>Python Programming</li>
@@ -106,15 +141,18 @@
             <li>Regular Expression (REGEX)</li>
             <li>Testing in Python</li>
          </ul>
-         <button>View Certificate</button>
+         <a href="images/certs/javaUCSD.png" target="_blank" rel="noreferrer noopener" class="viewCerts">View Certificate</a>
+<!--         <button class="btn btn-primary">View Certificate</button>-->
       </article>
       <hr>
-      <article>
-         <h3>Java Programming and Software Engineering Fundamentals</h3>
+      <article id="javaDuke" class="row text-center">
+         <h3 class="text-center">Java Programming and Software Engineering Fundamentals</h3>
          <h4>Certification by: Duke University and Coursera</h4>
-         <img src="images/duke.png" alt="duke">
-         <img src="images/coursera.png" alt="coursera">
-         <ul>
+         <figure class="text-center col-md-6">
+            <img src="images/duke.png" alt="duke" class="img-thumbnail col-xs-6">
+            <img src="images/coursera.png" alt="coursera" class="img-thumbnail col-xs-6">
+         </figure>
+         <ul class="col-md-6">
             <li>JavaScript</li>
             <li>Cascading Style Sheets (CCS)</li>
             <li>Java Programming</li>
@@ -127,15 +165,17 @@
             <li>Hash Table</li>
             <li>Programming Principles</li>
          </ul>
-         <button>View Certificate</button>
+         <a href="images/certs/javaUCSD.png" target="_blank" rel="noreferrer noopener" class="viewCerts">View Certificate</a>
       </article>
       <hr>
-      <article>
-         <h3>Object Oriented Java Programming: Data Structures and Beyond</h3>
+      <article id="javaUCSD" class="row text-center">
+         <h3 class="text-center">Object Oriented Java Programming: Data Structures and Beyond</h3>
          <h4>Certification by: University of California, San Diego and Coursera</h4>
-         <img src="images/ucsd.jpg" alt="ucsd">
-         <img src="images/coursera.png" alt="coursera">
-         <ul>
+         <figure class="text-center col-md-6">
+            <img src="images/ucsd.jpg" alt="ucsd" class="img-thumbnail col-xs-6">
+            <img src="images/coursera.png" alt="coursera" class="img-thumbnail col-xs-6">
+         </figure>
+         <ul class="col-md-6 text-center">
             <li>Data Structure</li>
             <li>Problem Solving</li>
             <li>Java Programming</li>
@@ -149,15 +189,17 @@
             <li>Search Algorithm</li>
             <li>Graph Algorithms</li>
          </ul>
-         <button>View Certificate</button>
+         <a href="images/certs/javaUCSD.png" target="_blank" rel="noreferrer noopener" class="viewCerts">View Certificate</a>
       </article>
       <hr>
-      <article>
+      <article id="webU" class="row text-center">
          <h3>Web Design for Everybody: Basics of Web Development and Coding Specialization (In Progress)</h3>
          <h4>Certification by: University of Michigan and Coursera</h4>
-         <img src="images/uMich.png" alt="UMich">
-         <img src="images/coursera.png" alt="coursera">
-         <ul>
+         <figure class="text-center col-md-6">
+            <img src="images/uMich.png" alt="webUMich" class="img-thumbnail col-xs-6">
+            <img src="images/coursera.png" alt="coursera" class="img-thumbnail col-xs-6">
+         </figure>
+         <ul class="col-md-6 text-center">
             <li>Data Structure</li>
             <li>Problem Solving</li>
             <li>Java Programming</li>
@@ -171,67 +213,56 @@
             <li>Search Algorithm</li>
             <li>Graph Algorithms</li>
          </ul>
-         <!--button>View Certificate</button-->
       </article>
-      <a href="#top"> Back To Top </a>
+      <a href="#top" class="back-to-top"> Back To Top </a>
    </section>
 
-   <section id="skills">
+   <section id="skills" class="container">
       <h2>Skills</h2>
-      <article>
-         <h3>Industry Skills</h3>
-         <ul>
-            <li>Customer Service</li>
-            <li>Data Analysis</li>
-            <li>Technical Drawings</li>
-            <li>Object Oriented Programming</li>
-            <li>Data Entry</li>
-            <li>Sales</li>
-            <li>Design</li>
-         </ul>
-      </article>
-      <article>
-         <h3>Tool and Technology Knowledge</h3>
-         <ul>
-            <li>AutoCAD</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Microsoft Excel</li>
-            <li>Microsoft Office</li>
-            <li>CNC Programming</li>
-         </ul>
-      </article>
-      <article>
-         <h3>Interpersonal Skills</h3>
-         <ul>
-            <li>Time Management & Multitasking</li>
-            <li>Problem Solving</li>
-            <li>Communication</li>
-            <li>Training</li>
-            <li>Management</li>
-            <li>Leadership</li>
-            <li>Teamwork</li>
-            <li>Critical Thinking</li>
-         </ul>
-      </article>
-      <a href="#top"> Back To Top </a>
+      <ul class="text-center">
+         <li>Customer Service</li>
+         <li>Data Analysis</li>
+         <li>Technical Drawings</li>
+         <li>Data Entry</li>
+         <li>Sales</li>
+         <li>Design</li>
+         <li>AutoCAD</li>
+         <li>Java</li>
+         <li>Python</li>
+         <li>HTML</li>
+         <li>CSS</li>
+         <li>JavaScript</li>
+         <li>Bootstrap</li>
+         <li>Microsoft Excel</li>
+         <li>Microsoft Office</li>
+         <li>CNC Programming</li>
+         <li>Object Oriented Programming</li>
+         <li>Time Management & Multitasking</li>
+         <li>Problem Solving</li>
+         <li>Communication</li>
+         <li>Training</li>
+         <li>Management</li>
+         <li>Leadership</li>
+         <li>Teamwork</li>
+         <li>Critical Thinking</li>
+         <li>Self Motivated</li>
+         <li>Continual Learning</li>
+      </ul>
+      <a href="#top" class="back-to-top"> Back To Top </a>
    </section>
 
-   <section id="experience">
+   <section id="experience" class="container">
       <h2>Employment History</h2>
-      <article>
-         <h3>DentonDoor Company</h3>
-         <a href="https://www.dentondoorcompany.com">
-         <img src="images/ddclogo.jpg" alt="ddc"></a>
-         <ol>
+      <article id="ddc" class="row">
+         <a href="https://www.dentondoorcompany.com" target="_blank" rel="noreferrer noopener" class="text-center col-md-4">
+            <img src="images/ddclogo.jpg" alt="ddc" class="img-thumbnail"><h3>Denton Door Company</h3></a>
+         <ol class="col-md-7">
             <li>
-               <ul>
+               <ol>
                   <li><b>Position: </b> CNC Programmer</li>
                   <li><b>When: </b> March 2017 - Present</li>
                   <li><b>Where: </b> Denton, TX</li>
-               </ul>
+               </ol>
             </li>
             <li>
                <h4>Responsibilites</h4>
@@ -253,17 +284,16 @@
          </ol>
       </article>
       <hr>
-      <article>
-         <h3>IP Illustration</h3>
-         <a href="https://www.ipillustration.com">
-         <img src="images/ipi.jpg" alt="ipi"></a>
-         <ol>
+      <article id="ipi" class="row">
+         <a href="https://www.ipillustration.com" target="_blank" rel="noreferrer noopener" class="text-center col-md-4">
+            <img src="images/ipi.jpg" alt="ipi" class="img-thumbnail"><h3>IP Illustration</h3></a>
+         <ol class="col-md-7">
             <li>
-               <ul>
+               <ol>
                   <li><b>Position: </b> Technical/Patent Illustrator</li>
                   <li><b>When: </b> July 2014 - March 2017</li>
                   <li><b>Where: </b> Flower Mound, TX</li>
-               </ul>
+               </ol>
             </li>
             <li>
                <h4>Responsibilites</h4>
@@ -284,17 +314,16 @@
          </ol>
       </article>
       <hr>
-      <article>
-         <h3>BBVA Compass</h3>
-         <a href="https://www.bbva.com">
-            <img src="images/bbva.jpg" alt="bbva"></a>
-         <ol>
+      <article id="bbva" class="row">
+         <a href="https://www.bbva.com" target="_blank" rel="noreferrer noopener" class="text-center col-md-4">
+            <img src="images/bbva.jpg" alt="bbva" class="img-thumbnail"><h3>BBVA Compass</h3></a>
+         <ol class="col-md-7">
             <li>
-               <ul>
+               <ol>
                   <li><b>Position: </b> Branch Associate</li>
                   <li><b>When: </b> July 2012 - July 2014</li>
-                  <li><b>Where: </b> Lewisville, TXFlower Mound, TX</li>
-               </ul>
+                  <li><b>Where: </b> Lewisville, TX / Flower Mound, TX</li>
+               </ol>
             </li>
             <li>
                <h4>Responsibilites</h4>
@@ -313,121 +342,100 @@
             </li>
          </ol>
       </article>
-      <a href="#top"> Back To Top </a>
+      <a href="#top" class="back-to-top"> Back To Top </a>
    </section>
 
-   <section id="portfolio">
+   <section id="portfolio" class="container">
       <h2>Portfolio</h2>
-      <article>
-         <h3>Code</h3>
-         <i class="fas fa-code fa-7x"></i>
-         <figure>
-         <a href="https://github.com/JoshJanoe/MovieRecommendationSystem">
-            <img class="thumb" src="images/recsystem-thumb.png" alt="RecSystem"></a>
-         <a href="https://github.com/JoshJanoe/SnakeGame">
-            <img class="thumb" src="images/snakegame-thumb.png" alt="SnakeGame"></a>
-         <a href="https://github.com/JoshJanoe">
-            <img class="thumb" src="images/temp.png" alt=""></a>
-         <a href="https://github.com/JoshJanoe">
-            <img class="thumb" src="images/temp.png" alt=""></a>
-         </figure>
+      <article id="coding" class="row">
+         <i class="fas fa-code fa-7x col-md-4 text-center"><h3>Coding and Web</h3></i>
+         <div class="col-xs-6 col-md-7 text-center">
+         <a href="https://github.com/JoshJanoe/MovieRecommendationSystem" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/recsystem-thumb.png" alt="RecSystem"></a>
+         <a href="https://github.com/JoshJanoe/SnakeGame" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/snakegame-thumb.png" alt="SnakeGame"></a>
+         <a href="https://github.com/JoshJanoe/DegreesOfSeparationOnSocialMedia" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/degreeOfSeparationThumb.png" alt="DegreeOfSeparation"></a>
+         <a href="https://www.DentonDoorCompany.com" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/ddc.png" alt="DentonDoorCompany"></a>
+         </div>
       </article>
       <hr>
-      <article>
-         <h3>CAD</h3>
-         <i class="fas fa-drafting-compass fa-7x"></i>
-         <figure>
-         <a href="https://drive.google.com/file/d/1JRVbR1UQTKgdYJ0K6xW1hiKXwelCOVBt/view">
-            <img class="thumb" src="images/86mortise.png" alt="mortise lock"></a>
-         <a href="https://drive.google.com/file/d/1JGoaCDu8_cJiizqFPTKir02sfguujsBy/view">
-            <img class="thumb" src="images/ironman.png" alt="IronMan"></a>
-         <a href="https://drive.google.com/file/d/1o2mMSeJ_-ik_Za9Entl0ef6U6eLpxbfS/view">
-            <img class="thumb" src="images/twenty.png" alt="twenty dollar bill"></a>
-         <a href="https://drive.google.com/file/d/1qAL1uFSof_p_8uac64M9nnWRnxf1-3PA/view">
-            <img class="thumb" src="images/unitedstates.png" alt="United States"></a>
-         </figure>
+      <article id="cadcnc" class="row">
+         <i class="fas fa-drafting-compass fa-7x col-md-4 text-center"><h3>CAD and CNC</h3></i>
+         <div class="col-xs-6 col-md-7 text-center">
+         <a href="https://drive.google.com/file/d/1JRVbR1UQTKgdYJ0K6xW1hiKXwelCOVBt/view" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/86mortise.png" alt="mortise lock"></a>
+         <a href="https://drive.google.com/file/d/1JGoaCDu8_cJiizqFPTKir02sfguujsBy/view" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/ironman.png" alt="IronMan"></a>
+         <a href="https://drive.google.com/file/d/1o2mMSeJ_-ik_Za9Entl0ef6U6eLpxbfS/view" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/twenty.png" alt="twenty dollar bill"></a>
+         <a href="https://drive.google.com/file/d/1qAL1uFSof_p_8uac64M9nnWRnxf1-3PA/view" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/unitedstates.png" alt="United States"></a>
+         <a href="https://drive.google.com/file/d/1JY5xsye_-w5SwFVqr5pyhRn9EACSw3T5/view" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/lhmortise.png" alt="LH Mortise"></a>
+         <a href="https://drive.google.com/file/d/1JbHd-pDwChvlR8y3S8t3Iw373KPkQdAm/view" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/lhrexit.png" alt="LHR Exit"></a>
+         <a href="https://drive.google.com/file/d/1JrVMdXERZmGe5GJK80Wmp5AD5n02UMAC/view" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/rhcylinder.png" alt="RH Cylinder"></a>
+         <a href="https://drive.google.com/file/d/1JuMIVFn5ckcQwZnDuojgbKtVAFIZouIM/view" target="_blank" rel="noreferrer noopener">
+            <img class="img-thumbnail" src="images/rhrmortiseept.png" alt="RHR Mortise EPT"></a>
+         </div>
       </article>
-      <hr>
-      <article>
-         <h3>Web Development and Design</h3>
-         <i class="fab fa-html5 fa-7x"></i>
-         <figure>
-         <a href="https://www.DentonDoorCompany.com">
-            <img class="thumb" src="images/ddc.png" alt="DentonDoorCompany"></a>
-         <a href="https://drive.google.com/file/d/IMAGE-ID-HERE/view">
-            <img class="thumb" src="images/temp.png" alt=""></a>
-         <a href="https://drive.google.com/file/d/IMAGE-ID-HERE/view">
-            <img class="thumb" src="images/temp.png" alt=""></a>
-         <a href="https://drive.google.com/file/d/IMAGE-ID-HERE/view">
-            <img class="thumb" src="images/temp.png" alt=""></a>
-         </figure>
-      </article>
-      <hr>
-      <article>
-         <h3>CNC</h3>
-         <i class="fas fa-toolbox fa-7x"></i>
-         <figure>
-         <a href="https://drive.google.com/file/d/1JY5xsye_-w5SwFVqr5pyhRn9EACSw3T5/view">
-            <img class="thumb" src="images/lhmortise.png" alt="LH Mortise"></a>
-         <a href="https://drive.google.com/file/d/1JbHd-pDwChvlR8y3S8t3Iw373KPkQdAm/view">
-            <img class="thumb" src="images/lhrexit.png" alt="LHR Exit"></a>
-         <a href="https://drive.google.com/file/d/1JrVMdXERZmGe5GJK80Wmp5AD5n02UMAC/view">
-            <img class="thumb" src="images/rhcylinder.png" alt="RH Cylinder"></a>
-         <a href="https://drive.google.com/file/d/1JuMIVFn5ckcQwZnDuojgbKtVAFIZouIM/view">
-            <img class="thumb" src="images/rhrmortiseept.png" alt="RHR Mortise EPT"></a>
-         </figure>
-      </article>
-      <a href="#top"> Back To Top </a>
+      <a href="#top" class="back-to-top"> Back To Top </a>
    </section>
 
-   <section id="references">
-      <h2>References</h2>
-      <article>
-      <details open>
-            <summary>First A Last</summary>
-            <ol>
-               <li><b>Name: </b>  First Last</li>
-            <li><b>Phone: </b>  (123) 456-7890</li>
-            <li><b>Email: </b>  FirstLast@example.com</li>
-            <li><b>Relationship: </b>  coworker</li>
-            <li><b>Years Known: </b>  10</li>
-            <li><b>Known From: </b>  Other Co</li>
-            <li><b>Current Job Title: </b>  Manager</li>
-            <li><b>Current Company: </b>  Some Co</li>
-         </ol>
-      </details>
-      </article>
-      <article>
-         <details>
-
-            <summary>First B Last</summary>
-            <ol>
-               <li><b>Name: </b>  First Last</li>
-            <li><b>Phone: </b>  (123) 456-7890</li>
-            <li><b>Email: </b>  FirstLast@example.com</li>
-            <li><b>Relationship: </b>  coworker</li>
-            <li><b>Years Known: </b>  10</li>
-            <li><b>Known From: </b>  Other Co</li>
-            <li><b>Current Job Title: </b>  Manager</li>
-            <li><b>Current Company: </b>  Some Co</li>
-         </ol>
-         </details>
-      </article>
-      <a href="#top"> Back To Top </a>
+   <section id="contact" class="container">
+      <h2>Contact</h2>
+      <form>
+         <fieldset class="row">
+            <legend>Contact Info</legend>
+            <p>Basic Info:</p>
+            <label class="col-xs-12">Name: <input type='text' id='name' name='name'></label>
+            <label class="col-md-5"> <input type="checkbox" name="contact1" value="Bike">Contact me via email</label>
+            <label class="col-md-5"> <input type="checkbox" name="contact2" value="Bike">Contact me via phone</label>
+            <label class="col-md-5">Email: <input type='email' name = 'email'> </label>
+            <label class="col-md-5">Phone: <input type="number" name="numberInput" min="7" max="15"></label>
+            <p>Reason for reaching out:</p>
+            <label class="col-md-5"><input type="radio" name="reason" value="hiring" checked>I'm a recruiter or hiring manager</label>
+            <label class="col-md-5"><input type="radio" name="reason" value="networking">Business networking</label>
+            <label class="col-md-5"><input type="radio" name="reason" value="saying hi">Just Saying "Hi"</label>
+            <label class="col-md-5"><input type="radio" name="reason" value="other">Other</label>
+            <p>Message:</p>
+            <label>
+               <textarea id='message' name='message' rows="4" cols="50">Enter your note or message here...</textarea>
+            </label>
+            <div>
+               <button class="btn btn-primary">Submit</button>
+               <button class="btn btn-primary">Reset Fields</button>
+            </div>
+         </fieldset>
+      </form>
    </section>
 </main>
 
-<footer id="contact">
-   <p>
-      <a href="mailto:JoshJanoe@gmail.com">JoshJanoe@gmail.com</a>||
-      <a href="tel:4699514696">(469) 951-469</a>||
-      <a href="www.LinkedIn.com/in/JoshJanoe">LinkedIn</a>||
-      <a href="www.GitHub.com/JoshJanoe">GitHub</a>
+<footer class="container">
+   <article class="row">
+      <a href="mailto:JoshJanoe@gmail.com" target="_blank" rel="noreferrer noopener" class="col-md-3 text-center">JoshJanoe@gmail.com</a>
+      <a href="tel:4699514696" target="_blank" rel="noreferrer noopener" class="col-md-3 text-center">(469) 951-469</a>
+      <a href="www.LinkedIn.com/in/JoshJanoe" target="_blank" rel="noreferrer noopener" class="col-md-3 text-center">LinkedIn</a>
+      <a href="www.GitHub.com/JoshJanoe" target="_blank" rel="noreferrer noopener" class="col-md-3 text-center">GitHub</a>
+   </article>
+   <hr>
+   <article class="row">
+   <p class="col-md-6 text-center">
+      Version Date: June 2021
    </p>
-   <p>
-      Version Date: April 2021 :: Designed and Developed by: Josh Janoe
+   <p class="col-md-6 text-center">
+      Designed and Developed by: Josh Janoe
    </p>
+   </article>
 </footer>
+
+<!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
